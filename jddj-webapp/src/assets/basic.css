@@ -1,7 +1,20 @@
-@charset "utf-8";
-html,body,div,p,form,label,ul,li,dl,dt,dd,ol,img,button,b,em,strong,small,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;list-style:none;font-style:normal;}
-body{font-family:SimHei,'Helvetica Neue',Arial,'Droid Sans',sans-serif,'微软雅黑';font-size:26.67rem;color:#333;background:#f2f2f2;}
-html{font-size: 26.67rem}
-a, a.link{color:#666;text-decoration:none;font-weight:500;}
-a, a.link:hover{color:#666;}
-h1,h2,h3,h4,h5,h6{font-weight: normal;}
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr,div,em,strong{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 0.12rem;
+}
+html{
+    font-size: 26.67vw;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}

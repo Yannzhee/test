@@ -1,0 +1,49 @@
+module.exports={
+	getdata(){
+		let a={
+			"src":[
+				{"s1":"assets/banner01.jpg"},
+				{"s1":"assets/banner02.jpg"},
+				{"s1":"assets/banner03.jpg"},
+				{"s1":"assets/banner04.jpg"},
+				{"s1":"assets/banner05.jpg"}
+				],
+			"nav":[
+				{"s1":"assets/homeNav00.jpg"},
+				{"s1":"assets/homeNav01.jpg"},
+				{"s1":"assets/homeNav02.jpg"},
+				{"s1":"assets/homeNav03.jpg"},
+				{"s1":"assets/homeNav04.jpg"},
+				],
+			"discount":[
+				{"s1":"assets/homediscount01.jpg"},
+				{"s1":"assets/homediscount02.jpg"},
+				{"s1":"assets/homediscount03.jpg"},
+				{"s1":"assets/homediscount04.jpg"},
+				{"s1":"assets/homediscount05.jpg"},
+				{"s1":"assets/homediscount06.jpg"},
+			],
+			"hotbrands":[
+				{"s1":"assets/hotbrands02.jpg"},
+				{"s1":"assets/hotbrands03.jpg"},
+				{"s1":"assets/hotbrands04.jpg"},
+				{"s1":"assets/hotbrands05.jpg"},
+				{"s1":"assets/hotbrands06.jpg"},
+				{"s1":"assets/hotbrands07.jpg"},
+			],
+			"hotitems":[
+				{"s1":"assets/hotitems02.jpg"},
+				{"s1":"assets/hotitems03.jpg"},
+				{"s1":"assets/hotitems04.jpg"},
+				{"s1":"assets/hotitems05.jpg"},
+				{"s1":"assets/hotitems06.jpg"},
+				{"s1":"assets/hotitems07.jpg"},
+			],
+			"homeshop":[
+				{"s1":"assets/shop2.gif"},
+				{"s1":"assets/shop1.jpg"},
+			]
+		};
+		return a
+	}
+}

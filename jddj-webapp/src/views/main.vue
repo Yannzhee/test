@@ -1,14 +1,17 @@
 <template>
     <div>
-        <a href="#/">首页</a> | <a href="#/main/goods">商品</a> |
-        <a href="#/main/carts">购物袋</a> | <a href="#/main/personal">我的</a>
         <router-view></router-view>
+        <footer-nav></footer-nav>
     </div>
 </template>
 
 <script>
+    import footerNav from "../components/footerNav"
     export default {
-        name: "xmain"
+        name: "xmain",
+        components:{
+            footerNav
+        }
     }
 </script>
 

@@ -1,10 +1,16 @@
 <template>
-    <h1>carts11111111111</h1>
+    <div>
+        <cHeader></cHeader>
+    </div>
 </template>
 
 <script>
+    import cHeader from "../../components/cHeader";
     export default {
-        name: "carts"
+        name: "carts",
+        components:{
+            cHeader
+        }
     }
 </script>
 
