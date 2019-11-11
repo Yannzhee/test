@@ -15,15 +15,16 @@
         <hotItems :data="data.hotitems"></hotItems>
         <div class="footMenu">
             <div class="footMenu-left">
-                <a href="">登录</a>
+                <a href="#/main/register">登录</a>
                 <span>|</span>
-                <a href="">注册</a>
+                <a href="#/main/registerLog">注册</a>
             </div>
             <div class="footMenu-right">顶部</div>
         </div>
         <div class="copyright">
             CopyRight © 2000-2019 banggo.com
         </div>
+        <footer-nav :data="markPoint"></footer-nav>
     </div>
 </template>
 
@@ -35,6 +36,7 @@
     import homeDiscount from "../../components/homediscount"
     import hotBrands from "../../components/hotbrands"
     import hotItems from "../../components/hotitems"
+    import footerNav from "../../components/footerNav";
     import api from "../../apis/api"
     export default {
         name: "home",
@@ -45,7 +47,8 @@
             homeShop,
             homeDiscount,
             hotBrands,
-            hotItems
+            hotItems,
+            footerNav
         },
         methods:{
             async _initHomeData() {
@@ -59,7 +62,8 @@
         },
         data(){
             return{
-                data:[]
+                data:[],
+                markPoint:0
             }
         }
     }

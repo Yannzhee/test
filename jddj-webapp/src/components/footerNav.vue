@@ -1,12 +1,13 @@
 <template>
     <div class="footerNav">
-        <a :href="u.url" v-for="(u,index) in tab" :key="index" @click="tabClick(index)" :class="markPoint===index?'changeRed':'changeBlack'"><span><img :src="markPoint===index?u.afterIconImg:u.beforeIconImg"></span>{{u.word}}</a>
+        <a :href="u.url" v-for="(u,index) in tab" :key="index" :class="data===index?'changeRed':'changeBlack'"><span><img :src="data===index?u.afterIconImg:u.beforeIconImg"></span>{{u.word}}</a>
     </div>
 </template>
 
 <script>
     export default {
         name: "footerNav",
+        props:["data"],
         data(){
             return{
                 tab:[
@@ -20,7 +21,7 @@
                         word:"商品",
                         beforeIconImg:'./footer-img/goods.png',
                         afterIconImg:'./footer-img/goods01.png',
-                        url:"#/main/goods/goodslist01"
+                        url:"#/main/goods"
                     },
                     {
                         word:"购物袋",
@@ -34,15 +35,7 @@
                         afterIconImg:'./footer-img/personal01.png',
                         url:"#/main/personal"
                     }
-                ],
-                markPoint:0
-            }
-        },
-        methods:{
-            tabClick(index){
-                // eslint-disable-next-line no-console
-                console.log(index);
-                this.markPoint=index;
+                ]
             }
         }
     }

@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const shopsModel = require("../module/model01");
 const classify =require("../module/model02");
+const personalNews =require("../module/model04");
 //允许跨域设置
 
 router.all("*",(req,res,next)=>{
@@ -21,5 +22,8 @@ router.get("/data",(req,res)=>{
     res.json(classify.getdata())
     //{orders:orderarr}  绑定到order.ejs模板上
 });
+router.get("/personal",(req,res)=>{
+    res.json(personalNews.getdata())
+})
 
 module.exports = router;

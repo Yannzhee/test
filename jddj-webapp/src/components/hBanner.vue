@@ -1,7 +1,7 @@
 <template>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="(u,index) in data" :key="index"><a href=""><img :src="u.s1" alt=""></a></div>
+            <div class="swiper-slide" v-for="(u,index) in data" :key="index"><a href=""><img :src="u" alt=""></a></div>
         </div>
         <div class="swiper-pagination"></div>
     </div>

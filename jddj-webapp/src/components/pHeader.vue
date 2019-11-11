@@ -1,6 +1,7 @@
 <template>
     <div class="pHeader">
-        <p>M177****1992</p>
+        <a  v-for="(u,index) in data" :key="index" class="ph">{{u.account}}</a>
+<!--        <router-link to="register"  v-for="(u,index) in data" :key="index" class="ph">{{u.account}}</router-link>-->
         <div class="pbox">
             <span>普通会员</span>
 <!--            <div></div>-->
@@ -12,7 +13,8 @@
 
 <script>
     export default {
-        name: "pHeader"
+        name: "pHeader",
+        props:["data"],
     }
 </script>
 
@@ -23,7 +25,7 @@
         padding: 0.15rem;
         box-sizing: border-box;
     }
-    .pHeader p{
+    .ph{
         color: white;
         height: 0.3rem;
         font-size: 0.18rem;

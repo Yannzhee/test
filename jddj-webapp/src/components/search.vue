@@ -1,6 +1,6 @@
 <template>
     <div class="search">
-        <div class="searchBox">
+        <div class="searchBox" @click="goSearch">
             <span><img src="../assets/home-img/mic-icon.png" alt=""></span>
             <p>断码零利24H疯抢</p>
         </div>
@@ -9,7 +9,12 @@
 
 <script>
     export default {
-        name: "search"
+        name: "search",
+        methods:{
+            goSearch(){
+                this.$router.push("/main/searchPage")
+            }
+        }
     }
 </script>
 

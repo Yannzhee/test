@@ -1,15 +1,25 @@
 <template>
     <div>
-        <cHeader></cHeader>
+        <cCarts v-if="data"></cCarts>
+        <cLog v-else></cLog>
     </div>
 </template>
 
 <script>
-    import cHeader from "../../components/cHeader";
+    import cLog from "../../components/cLog";
+    import cCarts from "../../components/cCarts";
+    var data=localStorage.getItem('name');
+    console.log(data);
     export default {
         name: "carts",
+        data(){
+          return{
+              data:data
+          }
+        },
         components:{
-            cHeader
+            cLog,
+            cCarts
         }
     }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div class="homeshop">
-        <a href="" v-for="(u,index) in data" :key="index"><img :src="u.s1" alt=""></a>
+        <a href="" v-for="(u,index) in data" :key="index"><img :src="u" alt=""></a>
     </div>
 </template>
 

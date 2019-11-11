@@ -1,7 +1,7 @@
 <template>
     <div class="box">
-        <div class="personal" v-for="(u,index) in personalNews" :key="index" >
-            <p>{{u.account}}<span>{{u.word}}</span></p>
+        <div class="personal">
+            <p v-for="(u,index) in data" :key="index">{{u.account}}<span @click="logOut">{{u.word}}</span></p>
         </div>
     </div>
 </template>
@@ -9,11 +9,11 @@
 <script>
     export default {
         name: "pLogout",
-        data(){
-            return{
-                personalNews:[
-                    {account:"M177****1992", word:"退出"},
-                ]
+        props:["data"],
+        methods:{
+            logOut(){
+                localStorage.removeItem('name')
+                this.$router.push("/main/register")
             }
         }
     }

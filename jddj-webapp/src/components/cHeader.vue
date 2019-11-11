@@ -19,9 +19,11 @@
         text-align: center;
         border-bottom: 1px solid #e2e2e2;
         box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
     }
     .cHeader a{
-        display: inline-block;
+        display: block;
         width: 0.5rem;
         height: 0.5rem;
         vertical-align: middle;
@@ -34,7 +36,6 @@
     .cHeader div{
         width: 0.5rem;
         height: 0.5rem;
-        display: inline-block;
         vertical-align: middle;
         line-height: 0.5rem;
         font-size: 0.14rem;
